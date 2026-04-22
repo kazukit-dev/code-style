@@ -12,9 +12,6 @@
         "typescript": "^5",
       },
     },
-    "packages/oxfmt-config": {
-      "name": "@kazukit-dev/oxfmt-config",
-    },
     "packages/oxlint-config": {
       "name": "@kazukit/oxlint-config",
       "version": "0.0.1",
@@ -24,8 +21,6 @@
     },
   },
   "packages": {
-    "@kazukit-dev/oxfmt-config": ["@kazukit-dev/oxfmt-config@workspace:packages/oxfmt-config"],
-
     "@kazukit/oxlint-config": ["@kazukit/oxlint-config@workspace:packages/oxlint-config"],
 
     "@oxfmt/binding-android-arm-eabi": ["@oxfmt/binding-android-arm-eabi@0.46.0", "", { "os": "android", "cpu": "arm" }, "sha512-b1doV4WRcJU+BESSlCvCjV+5CEr/T6h0frArAdV26Nir+gGNFNaylvDiiMPfF1pxeV0txZEs38ojzJaxBYg+ng=="],

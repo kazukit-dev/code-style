@@ -1,14 +1,15 @@
 {
   "name": "code-style",
   "private": true,
-  "packageManager": "bun@1.3.11",
   "workspaces": [
     "packages/*"
   ],
   "type": "module",
   "scripts": {
     "check:fmt": "oxfmt --check .",
-    "fix:fmt": "oxfmt --write ."
+    "fix:fmt": "oxfmt --write .",
+    "typecheck": "tsc --noEmit",
+    "release:oxlint-config": "bun run --filter @kazukit/oxlint-config release"
   },
   "devDependencies": {
     "@types/bun": "latest",
@@ -16,5 +17,6 @@
   },
   "peerDependencies": {
     "typescript": "^5"
-  }
+  },
+  "packageManager": "bun@1.3.11"
 }
