@@ -1,0 +1,19 @@
+{
+  "name": "code-style",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "type": "module",
+  "scripts": {
+    "check:fmt": "oxfmt --check .",
+    "fix:fmt": "oxfmt --write ."
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "oxfmt": "^0.46.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
