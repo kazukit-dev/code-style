@@ -1,0 +1,52 @@
+{
+  "name": "@kazukit/oxlint-config",
+  "version": "0.0.1",
+  "description": "Shared oxlint configuration for kazukit-dev projects (base, bun, node, vitest).",
+  "keywords": [
+    "bun",
+    "lint",
+    "linter",
+    "node",
+    "oxlint",
+    "oxlint-config",
+    "typescript",
+    "vitest"
+  ],
+  "homepage": "https://github.com/kazukit-dev/code-style/tree/main/packages/oxlint-config#readme",
+  "bugs": {
+    "url": "https://github.com/kazukit-dev/code-style/issues"
+  },
+  "license": "MIT",
+  "author": "kazukit-dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kazukit-dev/code-style.git",
+    "directory": "packages/oxlint-config"
+  },
+  "files": [
+    "index.ts",
+    "base.ts",
+    "bun.ts",
+    "node.ts",
+    "vitest.ts",
+    "README.md"
+  ],
+  "type": "module",
+  "main": "./index.ts",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "pack:dry": "bun pm pack --dry-run",
+    "release": "bun publish"
+  },
+  "peerDependencies": {
+    "oxlint": "^1.61.0"
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  }
+}
