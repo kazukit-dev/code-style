@@ -1,4 +1,4 @@
-# @kazukit-dev/oxlint-config
+# @kazukit/oxlint-config
 
 Shared [oxlint](https://oxc.rs/docs/guide/usage/linter) configuration, split by runtime and use case.
 
