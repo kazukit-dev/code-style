@@ -1,15 +1,43 @@
 # code-style
 
-To install dependencies:
+Shared code-style configurations for kazukit-dev projects.
 
-```bash
+## Packages
+
+| Package                                              | Description                                                       |
+| ---------------------------------------------------- | ----------------------------------------------------------------- |
+| [`@kazukit/oxlint-config`](./packages/oxlint-config) | Shared [oxlint](https://oxc.rs/docs/guide/usage/linter) config.   |
+| [`@kazukit/oxfmt-config`](./packages/oxfmt-config)   | Shared [oxfmt](https://oxc.rs/docs/guide/usage/formatter) config. |
+
+## Requirements
+
+- [Bun](https://bun.com) `>=1.3.11`
+
+## Development
+
+Install dependencies:
+
+```sh
 bun install
 ```
 
-To run:
+Format and type-check:
 
-```bash
-bun run index.ts
+```sh
+bun run check:fmt
+bun run fix:fmt
+bun run typecheck
 ```
 
-This project was created using `bun init` in bun v1.3.11. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+## Release
+
+Each package is published independently from the workspace root:
+
+```sh
+bun run release:oxlint-config
+bun run release:oxfmt-config
+```
+
+## License
+
+MIT
