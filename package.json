@@ -6,8 +6,8 @@
   ],
   "type": "module",
   "scripts": {
-    "check:fmt": "oxfmt --check .",
-    "fix:fmt": "oxfmt --write .",
+    "check:fmt": "bun --bun oxfmt --check .",
+    "fix:fmt": "bun --bun oxfmt --write .",
     "typecheck": "tsc --noEmit",
     "release:oxlint-config": "bun run --filter @kazukit/oxlint-config release"
   },
