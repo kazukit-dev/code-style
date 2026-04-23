@@ -40,7 +40,6 @@
     "access": "public"
   },
   "scripts": {
-    "pack:dry": "bun pm pack --dry-run",
     "release": "bun publish"
   },
   "peerDependencies": {
