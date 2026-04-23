@@ -1,0 +1,26 @@
+name: Publish package
+description: Publish a workspace package to npm via Bun
+
+inputs:
+  package:
+    description: npm package name (e.g. @kazukit/oxlint-config)
+    required: true
+  npm-token:
+    description: npm auth token
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - uses: oven-sh/setup-bun@v2
+      with:
+        bun-version-file: package.json
+    - run: bun install --frozen-lockfile
+      shell: bash
+    - name: Configure npm auth
+      shell: bash
+      env:
+        NPM_TOKEN: ${{ inputs.npm-token }}
+      run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+    - shell: bash
+      run: bun run --filter ${{ inputs.package }} release
