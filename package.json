@@ -8,10 +8,10 @@
   "scripts": {
     "check:fmt": "bun --bun oxfmt --check .",
     "fix:fmt": "bun --bun oxfmt --write .",
-    "typecheck": "tsc --noEmit",
-    "release:oxlint-config": "bun run --filter @kazukit/oxlint-config release"
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.31.0",
     "@types/bun": "latest",
     "oxfmt": "^0.46.0"
   },

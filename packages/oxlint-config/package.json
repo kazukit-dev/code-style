@@ -1,6 +1,6 @@
 {
   "name": "@kazukit/oxlint-config",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Shared oxlint configuration for kazukit-dev projects (base, bun, node, vitest).",
   "keywords": [
     "bun",
@@ -38,9 +38,6 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "scripts": {
-    "release": "bun publish"
   },
   "peerDependencies": {
     "oxlint": "^1.61.0"
