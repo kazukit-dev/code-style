@@ -1,0 +1,21 @@
+{
+  "name": "code-style",
+  "private": true,
+  "workspaces": [
+    "packages/**"
+  ],
+  "type": "module",
+  "scripts": {
+    "check:fmt": "oxfmt . --check",
+    "fix:fmt": "oxfmt . --write",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@kazukit/oxfmt-config": "workspace:*",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "oxfmt": "^0.46.0",
+    "typescript": "^5"
+  }
+}

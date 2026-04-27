@@ -1,0 +1,35 @@
+{
+  "name": "@kazukit/oxfmt-config",
+  "version": "0.1.0",
+  "description": "Shared oxfmt configuration",
+  "keywords": [
+    "code-style",
+    "config",
+    "formatter",
+    "oxfmt"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kazukit-dev/code-style.git",
+    "directory": "packages/oxfmt-config"
+  },
+  "files": [
+    "index.ts",
+    "README.md"
+  ],
+  "type": "module",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "exports": {
+    ".": "./index.ts",
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "oxfmt": "^0.46.0",
+    "typescript": "^5"
+  }
+}
