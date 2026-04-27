@@ -12,7 +12,8 @@
   },
   "devDependencies": {
     "@kazukit/oxfmt-config": "workspace:*",
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "lefthook": "^2.1.6"
   },
   "peerDependencies": {
     "oxfmt": "^0.46.0",
