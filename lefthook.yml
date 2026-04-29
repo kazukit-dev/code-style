@@ -21,6 +21,6 @@ pre-commit:
   parallel: true
   jobs:
     - name: typeckeck
-      run: bun run typeckeck
+      run: pnpm run typecheck
     - name: check:fmt
-      run: bun run check:fmt
+      run: pnpm run check:fmt

@@ -5,7 +5,7 @@ Shared [oxfmt](https://github.com/oxc-project/oxfmt) configuration.
 ## Install
 
 ```bash
-bun add -D @kazukit/oxfmt-config oxfmt
+pnpm add -D @kazukit/oxfmt-config oxfmt
 ```
 
 ## Usage
