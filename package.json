@@ -4,10 +4,12 @@
   "type": "module",
   "scripts": {
     "check:fmt": "oxfmt . --check",
+    "ci:version": "changeset version && pnpm install --lockfile-only",
     "fix:fmt": "oxfmt . --write",
     "typecheck": "tsgo --noEmit"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.31.0",
     "@kazukit/oxfmt-config": "workspace:*",
     "@typescript/native-preview": "7.0.0-dev.20260429.1",
     "lefthook": "^2.1.6",
