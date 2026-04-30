@@ -7,17 +7,17 @@
   "rangeStrategy": "bump",
   "lockFileMaintenance": {
     "enabled": true,
-    "schedule": ["before 9am on monday"],
+    "schedule": ["before 9am on monday"]
   },
   "packageRules": [
     {
       "matchDepTypes": ["devDependencies"],
       "matchUpdateTypes": ["patch", "minor"],
-      "automerge": true,
+      "automerge": true
     },
     {
       "matchDepTypes": ["peerDependencies"],
-      "rangeStrategy": "widen",
-    },
-  ],
+      "rangeStrategy": "widen"
+    }
+  ]
 }

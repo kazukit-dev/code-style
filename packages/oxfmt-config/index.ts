@@ -21,4 +21,12 @@ export default defineConfig({
       ["parent", "sibling", "index"],
     ],
   },
+  overrides: [
+    {
+      files: ["*.jsonc"],
+      options: {
+        trailingComma: "none",
+      },
+    },
+  ],
 });
