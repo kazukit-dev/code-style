@@ -1,0 +1,43 @@
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  plugins: ["import", "typescript", "eslint", "unicorn", "oxc"],
+  rules: {
+    "import/no-duplicates": "error",
+    "import/first": "error",
+    "import/no-cycle": "error",
+    "import/no-self-import": "error",
+    "import/no-empty-named-blocks": "error",
+    "import/consistent-type-specifier-style": "error",
+    "no-var": "error",
+    "no-unused-vars": [
+      "error",
+      {
+        argsIgnorePattern: "^_",
+        varsIgnorePattern: "^_",
+        caughtErrorsIgnorePattern: "^_",
+        destructuredArrayIgnorePattern: "^_",
+      },
+    ],
+    "default-case": "error",
+    "default-case-last": "error",
+    eqeqeq: "error",
+    "no-else-return": "error",
+    "no-eq-null": "error",
+    "typescript/array-type": "error",
+    "typescript/consistent-type-imports": "error",
+    "typescript/no-deprecated": "error",
+    "typescript/no-explicit-any": "error",
+    "typescript/no-import-type-side-effects": "error",
+    "typescript/no-misused-promises": "error",
+    "typescript/no-non-null-asserted-nullish-coalescing": "error",
+    "typescript/no-unnecessary-type-assertion": "error",
+    "typescript/no-unsafe-enum-comparison": "error",
+    "typescript/only-throw-error": "error",
+    "typescript/prefer-nullish-coalescing": "error",
+    "typescript/return-await": "error",
+    "typescript/use-unknown-in-catch-callback-variable": "error",
+    "unicorn/no-array-sort": "error",
+    "unicorn/no-array-reverse": "error",
+  },
+});

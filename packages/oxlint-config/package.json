@@ -1,21 +1,23 @@
 {
-  "name": "@kazukit/oxfmt-config",
+  "name": "@kazukit/oxlint-config",
   "version": "0.0.0",
-  "description": "Shared oxfmt configuration",
+  "description": "Shared oxlint configuration",
   "keywords": [
     "code-style",
     "config",
-    "formatter",
-    "oxfmt"
+    "linter",
+    "oxlint"
   ],
   "license": "MIT",
+  "author": "kazukit",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kazukit-dev/code-style.git",
-    "directory": "packages/oxfmt-config"
+    "directory": "packages/oxlint-config"
   },
   "files": [
     "index.ts",
+    "presets",
     "README.md"
   ],
   "type": "module",
@@ -29,7 +31,7 @@
     "access": "public"
   },
   "peerDependencies": {
-    "oxfmt": "^0.46.0",
+    "oxlint": "^1.62.0",
     "typescript": "^5"
   },
   "engines": {

@@ -6,14 +6,23 @@
     "check:fmt": "oxfmt . --check",
     "ci:version": "changeset version && pnpm install --lockfile-only",
     "fix:fmt": "oxfmt . --write",
+    "fix:lint": "oxlint . --write",
+    "check:lint": "oxlint .",
     "typecheck": "tsgo --noEmit"
   },
   "devDependencies": {
     "@changesets/cli": "^2.31.0",
     "@kazukit/oxfmt-config": "workspace:*",
+    "@kazukit/oxlint-config": "workspace:*",
+    "@types/node": "^25.6.0",
     "@typescript/native-preview": "7.0.0-dev.20260429.1",
     "lefthook": "^2.1.6",
-    "oxfmt": "^0.47.0"
+    "oxfmt": "^0.47.0",
+    "oxlint": "^1.62.0",
+    "vitest": "^4.1.5"
+  },
+  "engines": {
+    "node": ">=24.15.0"
   },
   "packageManager": "pnpm@10.33.0"
 }
