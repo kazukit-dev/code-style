@@ -9,6 +9,7 @@
     "fix:fmt": "oxfmt . --write",
     "fix:lint": "oxlint . --write",
     "check:lint": "oxlint .",
+    "prepare": "pnpm run build",
     "typecheck": "tsgo --noEmit"
   },
   "devDependencies": {
