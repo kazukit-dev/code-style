@@ -15,18 +15,25 @@
     "directory": "packages/oxfmt-config"
   },
   "files": [
-    "index.ts",
+    "dist",
     "README.md"
   ],
   "type": "module",
-  "main": "./index.ts",
-  "types": "./index.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
-    ".": "./index.ts",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
     "./package.json": "./package.json"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepack": "pnpm run build"
   },
   "peerDependencies": {
     "oxfmt": "^0.46.0 || ^0.50.0",
