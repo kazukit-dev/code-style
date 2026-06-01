@@ -20,7 +20,7 @@
     "@typescript/native-preview": "7.0.0-dev.20260527.2",
     "lefthook": "^2.1.9",
     "oxfmt": "^0.50.0",
-    "oxlint": "^1.62.0",
+    "oxlint": "^1.68.0",
     "typescript": "^5.9.3",
     "vitest": "^4.1.7"
   },
