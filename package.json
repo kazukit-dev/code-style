@@ -16,7 +16,7 @@
     "@changesets/cli": "^2.31.0",
     "@kazukit/oxfmt-config": "workspace:*",
     "@kazukit/oxlint-config": "workspace:*",
-    "@types/node": "^25.9.1",
+    "@types/node": "^25.9.2",
     "@typescript/native-preview": "7.0.0-dev.20260527.2",
     "lefthook": "^2.1.9",
     "oxfmt": "^0.50.0",
