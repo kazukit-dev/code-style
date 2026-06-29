@@ -19,7 +19,7 @@
     "@types/node": "^25.9.4",
     "@typescript/native-preview": "7.0.0-dev.20260628.1",
     "lefthook": "^2.1.9",
-    "oxfmt": "^0.50.0",
+    "oxfmt": "^0.57.0",
     "oxlint": "^1.71.0",
     "typescript": "^5.9.3",
     "vitest": "^4.1.9"
