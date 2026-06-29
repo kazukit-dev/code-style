@@ -36,7 +36,7 @@
     "prepack": "pnpm run build"
   },
   "peerDependencies": {
-    "oxfmt": "^0.46.0 || ^0.50.0",
+    "oxfmt": "^0.46.0 || ^0.50.0 || ^0.57.0",
     "typescript": "^5"
   },
   "engines": {
