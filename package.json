@@ -17,7 +17,7 @@
     "@kazukit/oxfmt-config": "workspace:*",
     "@kazukit/oxlint-config": "workspace:*",
     "@types/node": "^25.9.4",
-    "@typescript/native-preview": "7.0.0-dev.20260621.1",
+    "@typescript/native-preview": "7.0.0-dev.20260628.1",
     "lefthook": "^2.1.9",
     "oxfmt": "^0.50.0",
     "oxlint": "^1.71.0",
