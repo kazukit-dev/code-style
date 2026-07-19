@@ -13,7 +13,7 @@
     "typecheck": "tsgo --noEmit"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.31.0",
+    "@changesets/cli": "^2.31.1",
     "@kazukit/oxfmt-config": "workspace:*",
     "@kazukit/oxlint-config": "workspace:*",
     "@types/node": "^25.9.5",
