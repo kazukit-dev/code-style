@@ -9,6 +9,18 @@
     "enabled": true,
     "schedule": ["before 9am on monday"]
   },
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "pnpm-workspace.yaml の Node.js バージョンも .node-version と同時に更新する",
+      "managerFilePatterns": ["/^pnpm-workspace\\.yaml$/"],
+      "matchStrings": [
+        "(?:useNodeVersion|nodeVersion):\\s*(?<currentValue>\\d+\\.\\d+\\.\\d+)"
+      ],
+      "depNameTemplate": "node",
+      "datasourceTemplate": "node-version"
+    }
+  ],
   "packageRules": [
     {
       "matchDepTypes": ["devDependencies"],
