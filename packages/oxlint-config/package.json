@@ -38,7 +38,7 @@
   },
   "peerDependencies": {
     "oxlint": "^1.62.0",
-    "typescript": "^5"
+    "typescript": "^5 || ^7.0.0"
   },
   "engines": {
     "node": ">=24.15.0"
