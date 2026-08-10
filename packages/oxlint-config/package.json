@@ -1,6 +1,6 @@
 {
   "name": "@kazukit/oxlint-config",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Shared oxlint configuration",
   "keywords": [
     "code-style",
