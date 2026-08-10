@@ -10,14 +10,13 @@
     "fix:lint": "oxlint . --write",
     "check:lint": "oxlint .",
     "prepare": "pnpm run build",
-    "typecheck": "tsgo --noEmit"
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@changesets/cli": "^2.31.1",
     "@kazukit/oxfmt-config": "workspace:*",
     "@kazukit/oxlint-config": "workspace:*",
     "@types/node": "^25.9.5",
-    "@typescript/native-preview": "7.0.0-dev.20260707.2",
     "lefthook": "^2.1.10",
     "oxfmt": "^0.62.0",
     "oxlint": "^1.75.0",
