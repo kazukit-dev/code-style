@@ -17,7 +17,7 @@
     "@kazukit/oxfmt-config": "workspace:*",
     "@kazukit/oxlint-config": "workspace:*",
     "@types/node": "^25.9.5",
-    "lefthook": "^2.1.10",
+    "lefthook": "^2.1.12",
     "oxfmt": "^0.62.0",
     "oxlint": "^1.79.0",
     "typescript": "^7.0.2",
