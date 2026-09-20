@@ -16,7 +16,7 @@
     "@changesets/cli": "^2.31.1",
     "@kazukit/oxfmt-config": "workspace:*",
     "@kazukit/oxlint-config": "workspace:*",
-    "@types/node": "^25.9.6",
+    "@types/node": "^25.9.8",
     "lefthook": "^2.1.12",
     "oxfmt": "^0.62.0",
     "oxlint": "^1.82.0",
